@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>大管家-组织架构图</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.jOrgChart.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="prettify.js"></script>
+    
+    <!-- jQuery includes -->
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    
+    <script src="jquery.jOrgChart.js"></script>
+
+    <script>
+	    jQuery(document).ready(function() {
+	        $("#org").jOrgChart({
+	            chartElement : '#chart',
+	            dragAndDrop  : true
+	        });
+	    });
+    </script>
+    
+  </head>
+
+  <body onload="prettyPrint();">    
+     <ul id="org" style="display:none">
+       <li>总经办 <br/><br/><a onclick="alert('触发增加')">增加</a>&nbsp;<a onclick="alert('触发删除')">删除</a>
+        <ul>
+         <li>系统设计部</li>
+         <li>软件开发部
+           <ul>
+             <li>开发一部
+             	 <ul>
+                 <li>科室一</li>
+               </ul>
+             </li>
+             <li>开发二部
+             	 <ul>
+               	 <li>科室一</li>
+                 <li>科室二</li>
+                 <li>科室三</li>
+                 <li>科室四</li>
+                 <li>科室五</li>
+               </ul>
+             </li>
+           </ul>
+         </li>
+         <li>系统集成部
+           <ul>
+             <li>集成一部</li>
+             <li>集成二部</li>
+           </ul>
+         </li>
+         <li>质量控制部
+         	 <ul>
+             <li>测试部</li>
+             <li>管控部</li>
+           </ul>
+         </li>
+         <li>综合部
+           <ul>
+             <li>人事部</li>
+             <li>财务部</li>
+           </ul>
+         </li>
+       </ul>
+     </li>
+   </ul>
+    
+   <div id="chart" class="orgChart"></div>
+</body>
+</html>

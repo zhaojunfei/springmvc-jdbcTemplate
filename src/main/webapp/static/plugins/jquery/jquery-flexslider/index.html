@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery制作banner图片左右上下切换滚动特效-xw素材网</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+</head>
+<body>
+
+
+<div id="demo01" class="flexslider">
+	<ul class="slides">
+		<li><div class="img"><img src="images/ad_home.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_yuetu.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_nba.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_stock.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_auto.jpg" height="450" width="960" alt="" /></div></li>
+	</ul>
+</div><!--flexslider end-->
+
+<div id="demo02" class="flexslider">
+	<ul class="slides">
+		<li><div class="img"><img src="images/ad_home.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_yuetu.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_nba.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_stock.jpg" height="450" width="960" alt="" /></div></li>
+		<li><div class="img"><img src="images/ad_auto.jpg" height="450" width="960" alt="" /></div></li>
+	</ul>
+</div><!--flexslider end-->
+<div style=" width:600px;margin:0 auto; text-align:center; font-size:12px;">
+<p>由xw素材网整理，查看更多特效：【<a href="http://www.xwcms.net/" target="_blank"><font color="#000000">xw素材网</font></a>】</p>
+<p>＊尊重他人劳动成果，转载请自觉注明出处！注：此代码仅供学习交流</p>
+<p></p>
+</div>
+
+<script type="text/javascript" src="js/slider.js"></script> 
+<script type="text/javascript">
+$(function(){
+
+	$('#demo01').flexslider({
+		animation: "slide",
+		direction:"horizontal",
+		easing:"swing"
+	});
+	
+	$('#demo02').flexslider({
+		animation: "slide",
+		direction:"vertical",
+		easing:"swing"
+	});
+	
+});
+</script>
+
+</body>
+</html>
